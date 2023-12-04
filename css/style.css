@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Skranji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+#navbar {
+    height: 85px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.300);
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#logo {
+    margin: 5px 20px;
+}
+
+#logo img {
+    position: relative;
+    top: 1px;
+    padding: 4px;
+    height: 70px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: rgb(214 177 177);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    border: 2px solid rgb(223, 219, 219);
+}
+
+#logo img:hover {
+    box-shadow: 5px 5px 10px black !important;
+}
+
+#navbar ul {
+    position: relative;
+    left: 20px;
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    font-family: 'Signika Negative';
+    color: white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: rgb(233, 222, 222);
+}
+
+.user {
+    position: relative;
+    left: 770px;
+}
+
+.user button {
+    cursor: pointer;
+    padding: 3px 7px;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    border: 0px;
+    color: white;
+    background-color: transparent;
+    font-family: 'Signika Negative';
+}
+
+.user button:hover {
+    color: black;
+    font-weight: bold;
+    background-color: rgb(233, 222, 222);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../img/bg1.webp') no-repeat center center/cover;
+    height: 642px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#home h1 {
+    font-family: 'Signika Negative';
+    color: white;
+    text-align: center;
+    color: rgb(239, 239, 239);
+}
+
+#home p {
+    color: rgb(239, 239, 239);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Signika Negative';
+}
+
+.btn {
+    position: relative;
+    top: 15px;
+    padding: 6px 20px;
+    border: 0px;
+    background-color: brown;
+    color: white;
+    font-family: 'Skranji';
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    border: 2px solid black;
+    background-color: rgb(181, 66, 66);
+}
+
+#services-container {
+    font-family: 'Signika Negative';
+    background-color: rgb(237, 229, 229);
+    height: 560px;
+}
+
+#services {
+    margin: 20px;
+    display: flex;
+}
+
+#services .box {
+    width: 330px;
+    height: 365px;
+    border: 2px solid brown;
+    padding: 25px;
+    margin: 2px 55px;
+    margin-bottom: 20px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+
+#services .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    text-align: center;
+}
+
+#client-section {
+    font-family: 'Signika Negative';
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../img/clients.webp') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 130px;
+}
+
+#contact {
+    font-family: 'Signika Negative';
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../img/contact.webp') no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input {
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    border: 2px solid black;
+}
+
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: 'Signika Negative';
+    background-color: rgba(0, 0, 0, 0.850)
+}
