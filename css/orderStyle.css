@@ -174,6 +174,10 @@ footer {
         margin: 0;
     }
 
+    .nav-menu {
+        height: 60px;
+    }
+
     .logo img {
         height: 40px;
         box-shadow: none;
