@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOnlineMeal - Sign Up</title>
+    <link rel="icon" href="../img/icon.webp" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/signStyle.css">
+</head>
+
+<body>
+    <div class="signup-container">
+        <div class="first-div">
+            <form class="signup-form">
+                <h2>Create an Account</h2>
+                <div class="form-group">
+                    <label for="firstname">Name:</label>
+                    <input type="text" id="firstname" name="firstname" required autocomplete="given-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8" required
+                        autocomplete="current-password">
+                </div>
+                <div class="formgroup">
+                    <label class="gender-label">Gender:</label>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label class="radio-label" for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label class="radio-label" for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <span for="terms-text" id="terms-text">By creating an account, you agree to MyOnlineMeal <a href="#" id="privacy-policy-link">Privacy Policy</a> and <a href="#" id="terms-of-use-link">Terms of Use</a>.</span>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="cta-button" id="back-btn">Back</button>
+                    <button type="submit" class="cta-button" id="sign-btn">Sign Up</button>
+                </div>
+                <div class="form-group">
+                    <span for="terms-text" id="account">Already have an account? <a href="../html/signin.html"
+                            id="terms-of-use-link">Sign in</a></span>
+                </div>
+            </form>
+        </div>
+        <div class="second-div">
+            <img src="../img/signup.webp" alt="">
+        </div>
+    </div>
+    <script>
+        document.getElementById('back-btn').addEventListener('click', function () {
+            window.location.href = '../html/index.html';
+        });
+    </script>
+</body>
+
+</html>

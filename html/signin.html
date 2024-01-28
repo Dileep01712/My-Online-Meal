@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFrames - Sign In</title>
+    <link rel="icon" href="../img/icon.webp" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/signStyle.css">
+</head>
+
+<body>
+    <div class="signup-container" id="signin-container">
+        <div class="first-div">
+            <form class="signup-form">
+                <h2>Good to see you again</h2>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="8" required
+                        autocomplete="current-password">
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="cta-button" id="back-btn">Back</button>
+                    <button type="submit" class="cta-button" id="sign-btn">Sign in</button>
+                </div>
+                <div class="form-group">
+                    <div class="form-group">
+                        <span id="account">
+                            <a href="../html/signup.html" id="terms-of-use-link">Don't have an account?</a>
+                            <a href="#" id="forgot-password-link">Forgot Password?</a>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="second-div" id="second-div">
+            <img src="../img/signin.webp" alt="">
+        </div>
+    </div>
+    <script>
+        document.getElementById('back-btn').addEventListener('click', function () {
+            window.location.href = '../html/index.html';
+        });
+    </script>
+</body>
+
+</html>

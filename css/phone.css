@@ -1,68 +1,207 @@
-/* Navigation */
-#navbar {
-    flex-direction: column;
-}
+@media screen and (max-width: 768px) {
+    .h-primary {
+        font-size: 3rem;
+        padding: 7px;
+    }
 
-#navbar ul li a {
-    font-size: 1rem;
-    padding: 0px 7px;
-    padding-bottom: 8px;
-}
+    body {
+        padding: 0;
+        margin: 0;
+    }
 
-/* Home Section */
-#home {
-    height: 370px;
-    padding: 3px 28px;
-}
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+        height: 60px;
+    }
 
-#home::befor {
-    height: 480px;
-}
+    .logo {
+        width: 60px;
+    }
 
-#home p {
-    font-size: 13px;
+    .logo img {
+        height: 35px;
+        box-shadow: none;
+        border: none;
+        margin: 0;
+        border-radius: 3px;
+    }
 
-}
+    .nav ul li a {
+        font-size: 1.5rem;
+        padding: 7px;
+        margin: 10px;
+    }
 
-/* Services Section */
-#services {
-    flex-direction: column;
-}
+    .mainMenu {
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1;
+    }
 
-#services {
-    padding: 14px;
-    margin: 2px 0px;
-    margin-bottom: 20px;
-}
+    .mainMenu .item:first-child {
+        margin-top: 30px;
+    }
 
-#services-container {
-    margin-top: 160px;
-}
+    .mainMenu .menu {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-/* Clients Section */
-#clients {
-    flex-wrap: wrap;
-}
+    .item {
+        padding: 10px;
+        text-align: center;
+    }
 
-#clients img {
-    width: 66px;
-    padding: 6px;
-    height: auto;
-}
+    .item a:hover {
+        border-radius: 7px;
+        color: black;
+        background-color: rgb(233, 222, 222);
+    }
 
-/* Contact Us Section */
-#contact-box form {
-    width: 80%;
-}
+    .openMenu,
+    .closeMenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        width: 32px;
+        font-size: 2rem;
+        color: white;
+    }
 
-/* Footer */
+    .fa-times {
+        top: -111px;
+        position: relative;
+    }
 
-/* Utility Classes */
-.h-primary {
-    font-size: 26px;
-}
+    #userIcon {
+        display: flex;
+        position: relative;
+        left: -72px;
+        padding: 5px;
+        font-size: 18px;
+        border-radius: 14%;
+        background-color: aliceblue;
+    }
 
-.btn {
-    font-size: 13px;
-    padding: 4px 8px;
+    .userbtn {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .userbtn.active {
+        display: flex;
+        z-index: 1;
+    }
+
+    .butn {
+        width: 40%;
+        margin: 20px;
+    }
+
+    .butn:hover {
+        font-weight: bold;
+        background-color: rgb(233, 222, 222);
+    }
+
+    #home {
+        height: 300px;
+        padding: 10px;
+    }
+
+    #home::before {
+        height: 396px;
+    }
+
+    #home p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px;
+        margin: 10px;
+        top: 0;
+        outline: none;
+        font-size: 1.3rem;
+        border: 2px solid transparent;
+    }
+
+    .btn:hover {
+        box-shadow: none;
+    }
+
+    #services {
+        flex-direction: column;
+        padding: 14px;
+        margin: 2px 0px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #services-container {
+        height: 1365px;
+    }
+
+    #services-container h1 {
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    #services .box {
+        width: 300px;
+        height: auto;
+        padding: 15px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #client-section {
+        height: 380px;
+    }
+
+    #clients {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .client-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 110px;
+        width: 110px;
+        padding: 12px;
+        margin: 7px;
+        border-radius: 7px;
+    }
+
+    #clients img {
+        width: 100px;
+        height: auto;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    footer {
+        padding: 5px;
+    }
 }

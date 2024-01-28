@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap');
+
+body {
+    font-family: 'Signika Negative';
+    background-color: #f8e8d9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signup-container {
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    width: 800px;
+    max-width: 100%;
+    display: flex;
+    padding: 15px;
+}
+
+#signin-container {
+    width: 700px;
+}
+
+.first-div {
+    flex: 1;
+}
+
+.second-div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-div img {
+    height: 370px;
+}
+
+#second-div {
+    margin: 10px;
+}
+
+#second-div img {
+    height: 320px;
+}
+
+.signup-form h2 {
+    text-align: center;
+    color: #f3410f;
+}
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+label {
+    display: block;
+    margin: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 14px;
+    box-sizing: border-box;
+    background-color: #C6C6C6;
+    font-family: 'Playpen Sans';
+    border: 1px solid black;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cta-button {
+    font-family: 'Signika Negative';
+    background-color: #fe7e4e;
+    color: #fff;
+    padding: 7px;
+    margin: 5px;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    border-radius: 10px;
+}
+
+#back-btn {
+    background-color: #fe7e4e;
+}
+
+#account {
+    margin: 15px 0 0 0;
+    font-size: 12px;
+    text-align: center;
+}
+
+span {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formgroup {
+    display: flex;
+    align-items: center;
+}
+
+.gender-label {
+    margin-right: 15%;
+}
+
+.formgroup div {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-label {
+    cursor: pointer;
+    position: relative;
+}
+
+.radio-label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10%;
+    position: absolute;
+    left: -35px;
+}
+
+input[type="radio"]:checked+.radio-label:before {
+    background-color: #1400FF;
+    border-color: #1400FF;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+#terms-text {
+    margin: 7px;
+    font-size: 12px;
+}
+
+#forgot-password-link {
+    margin: 0px 0px 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 90vh;
+    }
+
+    .signup-container {
+        height: 80%;
+    }
+
+    #signin-container {
+        height: 49%;
+    }
+
+    .signup-form h2 {
+        margin: 20px;
+    }
+
+    label {
+        margin: 7px;
+    }
+
+    .radio-label:before {
+        width: 13px;
+        height: 13px;
+    }
+
+    #terms-text,
+    #account {
+        font-size: 14px;
+    }
+
+    .button-container {
+        margin: 20px;
+    }
+
+    .cta-button {
+        border-radius: 7px !important;
+    }
+
+    .first-div {
+        padding: 0;
+        margin: 0;
+    }
+
+    .second-div {
+        display: none !important;
+    }
+}

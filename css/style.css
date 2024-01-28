@@ -7,10 +7,6 @@
     padding: 0;
 }
 
-body {
-    margin: 0;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -29,99 +25,96 @@ html {
     text-align: center;
 }
 
-#navbar {
-    height: 85px;
+.nav {
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.300);
-    top: 0px;
+    justify-content: space-between;
+    height: 45px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-#navbar::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.4;
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#logo {
-    margin: 5px 20px;
-}
-
-#logo img {
-    position: relative;
-    top: 1px;
-    padding: 4px;
-    height: 70px;
+.logo img {
+    height: 40px;
+    margin: 7px;
+    padding: 3px;
     border-radius: 7px;
     cursor: pointer;
+    border: 2px solid white;
     background-color: rgb(214 177 177);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-    border: 2px solid rgb(223, 219, 219);
 }
 
-#logo img:hover {
-    box-shadow: 5px 5px 10px black !important;
+.openMenu,
+.closeMenu {
+    display: none;
 }
 
-#navbar ul {
-    position: relative;
-    left: 20px;
+.mainMenu {
+    list-style: none;
+}
+
+.menu {
     display: flex;
 }
 
-#navbar ul li {
-    list-style: none;
-    font-size: 1.3rem;
-}
-
-#navbar ul li a {
+.item a {
+    margin: 0 10px;
+    padding: 5px;
+    font-size: 1.4rem;
     font-family: 'Signika Negative';
     color: white;
-    display: block;
-    padding: 3px 15px;
-    border-radius: 7px;
     text-decoration: none;
+    cursor: pointer !important;
 }
 
-#navbar ul li a:hover {
-    color: black;
-    background-color: rgb(233, 222, 222);
-}
-
-.user {
-    position: relative;
-    left: 770px;
-}
-
-.user button {
-    cursor: pointer;
-    padding: 3px 7px;
+.item a:hover {
     border-radius: 7px;
-    font-size: 1.3rem;
+    font-weight: bold;
+    color: black;
+    background-color: #fddcba;
+}
+
+.userbtn {
+    position: relative;
+    left: -10px;
+}
+
+.userbtn button {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 1.4rem;
     border: 0px;
     color: white;
-    background-color: transparent;
     font-family: 'Signika Negative';
+    background-color: transparent;
 }
 
-.user button:hover {
-    color: black;
+.userbtn button:hover {
+    border-radius: 7px;
     font-weight: bold;
-    background-color: rgb(233, 222, 222);
+    color: black;
+    background-color: #fddcba;
+}
+
+#userIcon {
+    display: none;
 }
 
 #home {
     display: flex;
-    flex-direction: column;
-    padding: 3px 200px;
-    height: 550px;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 547px;
+    padding: 0px 200px;
 }
 
 #home::before {
@@ -133,20 +126,19 @@ html {
     top: 0px;
     left: 0px;
     z-index: -1;
-    opacity: 0.89;
+    opacity: 0.9;
 }
 
 #home h1 {
-    font-family: 'Signika Negative';
-    color: white;
     text-align: center;
     color: rgb(239, 239, 239);
+    font-family: 'Signika Negative';
 }
 
 #home p {
-    color: rgb(239, 239, 239);
-    text-align: center;
     font-size: 1.5rem;
+    text-align: center;
+    color: rgb(239, 239, 239);
     font-family: 'Signika Negative';
 }
 
@@ -154,49 +146,43 @@ html {
     position: relative;
     top: 15px;
     padding: 6px 20px;
-    border: 0px;
-    background-color: brown;
-    color: white;
-    font-family: 'Skranji';
     margin: 17px;
-    font-size: 1.5rem;
-    border-radius: 10px;
     cursor: pointer;
-    border: 2px solid transparent;
-}
-
-.btn:hover {
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.5rem;
+    font-family: 'Skranji';
+    color: white;
+    background-color: #f3410f;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-    border: 2px solid black;
-    background-color: rgb(181, 66, 66);
 }
 
 #services-container {
+    height: 570px;
     font-family: 'Signika Negative';
-    background-color: rgb(237, 229, 229);
-    height: 560px;
+    background-color: #FFE5DC;
 }
 
 #services {
-    margin: 20px;
     display: flex;
+    margin: 20px;
 }
 
 #services .box {
     width: 330px;
     height: 365px;
-    border: 2px solid brown;
     padding: 25px;
     margin: 2px 55px;
     margin-bottom: 20px;
     border-radius: 28px;
-    background: #f2f2f2;
+    border: 2px solid brown;
+    background-color: #E8C4C5;
 }
 
 #services .box img {
+    display: block;
     height: 160px;
     margin: auto;
-    display: block;
 }
 
 #services .box p {
@@ -204,8 +190,8 @@ html {
 }
 
 #client-section {
-    font-family: 'Signika Negative';
     position: relative;
+    font-family: 'Signika Negative';
 }
 
 #client-section::before {
@@ -215,7 +201,7 @@ html {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.7;
 }
 
 #clients {
@@ -230,59 +216,37 @@ html {
 
 #clients img {
     height: 130px;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #e6e6e6d0;
 }
 
-#contact {
-    font-family: 'Signika Negative';
-    position: relative;
-}
-
-#contact::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background: url('../img/contact.webp') no-repeat center center/cover;
-}
-
-#contact-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 34px;
-}
-
-#contact-box input {
-    outline: none;
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 9px;
+.submit {
+    padding: 10px;
+    margin: 7px;
+    border-radius: 10px;
+    cursor: pointer;
     border: 2px solid black;
+    font-size: 1.5rem;
+    font-family: 'Signika Negative';
+    color: white;
+    background-color: brown;
 }
 
-#contact-box textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 9px;
-    font-size: 1.1rem;
-}
-
-#contact-box form {
-    width: 40%;
-}
-
-#contact-box label {
-    font-size: 1.3rem;
+.submit:hover {
+    border: 2px solid transparent;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    background-color: rgb(181, 66, 66);
 }
 
 footer {
-    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    height: 60px;
     text-align: center;
     font-family: 'Signika Negative';
-    background-color: rgba(0, 0, 0, 0.850)
+    background-color: black;
+    color: white;
+    font-size: 19px;
 }
